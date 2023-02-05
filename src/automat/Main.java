@@ -1,10 +1,15 @@
+package automat;
+
+
+
 public class Main  {
 
     public static void main(String[] args) {
         POS1 automat = new POS1();
         automat.setVisible(true);
-        automat.setSize(1000,1000);
-        ITEMS items = new ITEMS();
+        automat.setSize(1250,750);
+
+
 
 
     }

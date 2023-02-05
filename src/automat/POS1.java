@@ -1,3 +1,5 @@
+package automat;
+
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -186,6 +188,7 @@ public class POS1 extends JFrame{
         btn1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+
                 int x = 0;
                 x = (int) spn1.getValue();
                 spn1.setValue(x+1);
@@ -522,6 +525,7 @@ public class POS1 extends JFrame{
                 }
             }
         });
+
     }
 
 
@@ -546,11 +550,13 @@ public class POS1 extends JFrame{
             }).start();
         }
 
-        public void calosc()
+        public double calosc()
         {
-            rachunek.setText(String.valueOf(total1));
+            topay.setText(String.valueOf(total1));
+            return total1;
 
         }
+
 
 }
 

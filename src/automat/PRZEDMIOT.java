@@ -1,3 +1,5 @@
+package automat;
+
 public class PRZEDMIOT {
     private int amount;
 
@@ -14,4 +16,11 @@ public class PRZEDMIOT {
     {
         this.amount -= amount;
     }
+
+    public String size() {
+        return String.valueOf(this.amount);
+    }
+
+
 }
+
