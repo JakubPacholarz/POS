@@ -19,6 +19,12 @@ public class CARD extends JFrame implements ActionListener {
     this.setSize(250, 250);
     POTWIERDZButton.addActionListener(this);
 
+    RESETButton.addActionListener(new ActionListener() {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            reset();
+        }
+    });
 }
 
     @Override
@@ -31,5 +37,10 @@ public class CARD extends JFrame implements ActionListener {
         }else {
             JOptionPane.showMessageDialog(null,"ZŁY PIN POLICJA JEDZIE");
         }
+    }
+
+    public void reset()
+    {
+        passwordField1.setText(null);
     }
 }

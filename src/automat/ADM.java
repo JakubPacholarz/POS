@@ -23,7 +23,7 @@ public class ADM extends JFrame implements ActionListener {
         super("ADMIN ACCOUNT");
         this.setContentPane(this.pan1);
         this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        this.setSize(250, 250);
+        this.setSize(350, 350);
         LOGINButton.addActionListener(this);
 
     }

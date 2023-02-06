@@ -183,18 +183,19 @@ public class POS1 extends JFrame{
             public void actionPerformed(ActionEvent e) {
                 PAYMENT pay = new PAYMENT();
                 pay.setVisible(true);
+
             }
         });
         btn1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
-                int x = 0;
-                x = (int) spn1.getValue();
-                spn1.setValue(x+1);
+                    int x = 0;
+                    x = (int) spn1.getValue();
+                    spn1.setValue(x + 1);
 
+                }
 
-            }
         });
         btn5.addActionListener(new ActionListener() {
             @Override
@@ -495,7 +496,6 @@ public class POS1 extends JFrame{
         checkBox11.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
                 int qty = Integer.parseInt(spn12.getValue().toString());
                 if (qtyiszero(qty) && checkBox11.isSelected()) {
                     x++;
@@ -550,10 +550,10 @@ public class POS1 extends JFrame{
             }).start();
         }
 
-        public double calosc()
+        public String calosc()
         {
             topay.setText(String.valueOf(total1));
-            return total1;
+            return null;
 
         }
 

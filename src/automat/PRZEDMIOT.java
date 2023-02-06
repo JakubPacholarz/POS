@@ -1,26 +1,14 @@
 package automat;
 
-public class PRZEDMIOT {
-    private int amount;
+    public class PRZEDMIOT extends POS1{
 
-    public PRZEDMIOT(int amount)
-    {
-        this.amount = amount;
+
+        public PRZEDMIOT()
+        {
+            PRZEDMIOT pepsi = new PRZEDMIOT();
+        }
+
+
 
     }
-    public void add(int amount)
-    {
-        this.amount += amount;
-    }
-    public void substract(int amount)
-    {
-        this.amount -= amount;
-    }
-
-    public String size() {
-        return String.valueOf(this.amount);
-    }
-
-
-}
 

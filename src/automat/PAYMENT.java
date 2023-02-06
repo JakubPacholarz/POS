@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class PAYMENT extends JFrame {
+public class PAYMENT extends POS1 {
     private JPanel panel1;
     private JPanel panel2;
     private JLabel forma;
@@ -15,22 +15,14 @@ public class PAYMENT extends JFrame {
     private JLabel cash;
     private JButton cardpay;
     private JButton cahspay;
-    private JLabel amount;
-    private JTextField howmuchtopay;
 
     public PAYMENT()
     {
-        super("automat.PAYMENT");
         this.setContentPane(this.panel1);
         this.setSize(250,250);
         this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        howmuchtopay.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                POS1 total1 = new POS1();
-                howmuchtopay.setText(String.valueOf(total1));
-            }
-        });
+
+
         cardpay.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -56,7 +48,7 @@ public class PAYMENT extends JFrame {
 
     void form()
     {
-        howmuchtopay = new JTextField();
+      ;
 
     }
 

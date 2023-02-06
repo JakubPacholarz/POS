@@ -4,68 +4,187 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class CASH extends JFrame implements ActionListener {
+public class CASH extends POS1{
     private JPanel panel1;
-    private JTextField textField2;
     private JTextField textField3;
     private JTextField textField1;
+    private JButton a1Button;
+    private JButton a6Button;
+    private JButton a0Button;
+    private JButton a4Button;
+    private JButton a3Button;
+    private JButton a8Button;
+    private JButton a2Button;
+    private JButton a5Button;
+    private JButton a7Button;
+    private JButton a9Button;
+    private JButton b1;
+    private JButton b2;
+    private JButton b3;
+    private JButton b4;
+    private JButton b5;
+    private JButton b6;
+    private JButton b7;
+    private JButton b8;
+    private JButton b9;
+    private JButton b0;
+    private JTextField textField2;
+    private JButton RESETButton;
+    private JButton RESETButton1;
+    private JButton RST;
     private JButton a1zlButton;
     private JButton a2zlButton;
     private JButton a5zlButton;
     private JButton a10zlButton;
-    int x = 1 ;
+    int x = 1;
 
     double total = 0.0;
 
-    public  CASH()
-    {
-        super("OPŁATA GOTÓWKĄ");
+    public CASH() {
         this.setContentPane(this.panel1);
         this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        this.setSize(250, 250);
+        this.setSize(500, 500);
 
-
-
-        a1zlButton.addActionListener(new ActionListener() {
+        a1Button.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                int x =1;
-                a1zlButton.setText("1");
-                textField2.setText(a1zlButton.getText());
+                textField1.setText("1");
             }
         });
-        a2zlButton.addActionListener(new ActionListener() {
+        a2Button.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                int x =2;
-                a1zlButton.setText("2");
-                textField2.setText(a1zlButton.getText());
+                textField1.setText(textField1.getText()+2);
             }
         });
-        a5zlButton.addActionListener(new ActionListener() {
+        a3Button.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                int x =5;
-                a1zlButton.setText("5");
-                textField2.setText(a1zlButton.getText());
+                textField1.setText(textField1.getText()+3);
             }
         });
-        a10zlButton.addActionListener(new ActionListener() {
+        a4Button.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                int x =10;
-                a1zlButton.setText("10");
-                textField2.setText(a1zlButton.getText());
+                textField1.setText(textField1.getText()+4);
             }
         });
-    }
-     public JTextField calosc2()
-     {
-         textField3.setText(String.valueOf(textField2));
-         return textField2;
-     }
-    @Override
-    public void actionPerformed(ActionEvent e) {
+        a5Button.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                textField1.setText(textField1.getText()+5);
+            }
+        });
+        a6Button.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                textField1.setText(textField1.getText()+6);
+            }
+        });
+        a7Button.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                textField1.setText(textField1.getText()+7);
+            }
+        });
+        a8Button.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                textField1.setText(textField1.getText()+8);
+            }
+        });
+        a9Button.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                textField1.setText(textField1.getText()+9);
+            }
+        });
+        a0Button.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                textField1.setText(textField1.getText()+0);
+            }
+        });
+        RESETButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                textField1.setText(null);
+            }
+        });
+        RESETButton1.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                textField2.setText(null);
+            }
+        });
+        b1.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                textField2.setText("1");
+            }
+        });
+        b2.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                textField2.setText(textField2.getText()+2);
+            }
+        });
+        b3.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                textField2.setText(textField2.getText()+3);
+            }
+        });
+        b4.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                textField2.setText(textField2.getText()+4);
+            }
+        });
+        b5.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                textField2.setText(textField2.getText()+5);
+            }
+        });
+        b6.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                textField2.setText(textField2.getText()+6);
+            }
+        });
+        b7.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                textField2.setText(textField2.getText()+7);
+            }
+        });
+        b8.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                textField2.setText(textField2.getText()+8);
+            }
+        });
+        b9.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                textField2.setText(textField2.getText()+9);
+            }
+        });
+        b0.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                textField2.setText(textField2.getText()+0);
+            }
+        });
 
+        String text = textField2.getText() + textField2.getText();
+        RST.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                textField3.setText(textField3.getText()+textField2.getText() + "-" + textField1.getText() + "=");
+            }
+        });
     }
 }
+
