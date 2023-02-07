@@ -55,7 +55,7 @@ public class SUPPLY extends POS1{
 
         this.setContentPane(this.panelqwe);
         this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        this.setSize(250, 250);
+        this.setSize(500, 500);
 
         addskojab.addActionListener(new ActionListener() {
             @Override
